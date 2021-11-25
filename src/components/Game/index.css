@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+  color: rebeccapurple;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  max-width: 50vw;
+  padding: 10px;
+}
