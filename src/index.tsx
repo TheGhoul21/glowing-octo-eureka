@@ -6,7 +6,8 @@ import Leaderboard from './components/Leaderboard';
 import NewGame from './components/NewGame';
 import reportWebVitals from './reportWebVitals';
 import { ROUTES } from './routes'
-
+import { app } from './firebase'
+import { App } from './App'
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,17 +15,7 @@ import {
   Link
 } from "react-router-dom";
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path={ROUTES.HOME} element={<Game />} />
-        <Route path={ROUTES.NEW_GAME} element={<NewGame />} />
-        <Route path={ROUTES.LEADERBOARD} element={<Leaderboard />} />
-
-
-      </Routes>
-    </Router>
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
